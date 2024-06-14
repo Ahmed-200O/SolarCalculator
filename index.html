@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="s.css">
+    <script src="script.js" defer></script>
+    <title>Solar Calculator</title>
+</head>
+<body>
+
+<header>
+    Solar Energy Calculator
+</header>
+
+<div class="container">
+    <h2>Calculate Your Solar Energy</h2>
+    <label for="zone">Zone:</label>
+    <select id="zone">
+        <option value="1">Zone 1</option>
+        <option value="2">Zone 2</option>
+        <option value="3">Zone 3</option>
+        <option value="4">Zone 4</option>
+        <option value="5">Zone 5</option>
+    </select>
+
+    <label for="systemSize">System Size (kW):</label>
+    <input type="number" id="systemSize" placeholder="Enter system size in kW">
+    
+    <label for="efficiency">Panel Efficiency (%):</label>
+    <input type="number" id="efficiency" placeholder="Enter panel efficiency in %">
+    
+    <fieldset>
+        <legend>Average Daily Sunlight Hours for Each Month (kWh/m²/day)</legend>
+        <div class="fieldset-grid">
+            <label for="january">January:</label>
+            <input type="number" id="january" placeholder="January">
+            <label for="february">February:</label>
+            <input type="number" id="february" placeholder="February">
+            <label for="march">March:</label>
+            <input type="number" id="march" placeholder="March">
+            <label for="april">April:</label>
+            <input type="number" id="april" placeholder="April">
+            <label for="may">May:</label>
+            <input type="number" id="may" placeholder="May">
+            <label for="june">June:</label>
+            <input type="number" id="june" placeholder="June">
+            <label for="july">July:</label>
+            <input type="number" id="july" placeholder="July">
+            <label for="august">August:</label>
+            <input type="number" id="august" placeholder="August">
+            <label for="september">September:</label>
+            <input type="number" id="september" placeholder="September">
+            <label for="october">October:</label>
+            <input type="number" id="october" placeholder="October">
+            <label for="november">November:</label>
+            <input type="number" id="november" placeholder="November">
+            <label for="december">December:</label>
+            <input type="number" id="december" placeholder="December">
+        </div>
+    </fieldset>
+    
+    <button onclick="calculateSolar()">Calculate</button>
+    
+    <div class="result" id="result"></div>
+</div>
+</body>
+</html>
